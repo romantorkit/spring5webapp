@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://wwww.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>Spring Framework Guru</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
         <td>First Name</td>
         <td>Last Name</td>
     </tr>
-    <tr th:each="author : ${authors}">
+        <tr th:each="author : ${authors}">
         <td th:text="${author.id}">123</td>
         <td th:text="${author.firstName}">Roman</td>
         <td th:text="${author.lastName}">Torkit</td>

@@ -21,13 +21,13 @@ public class Publisher {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
-    private String adress;
+    private String address;
     @OneToOne
     @JsonIgnore
     private Book book;
 
-    public Publisher(String name, String adress) {
+    public Publisher(String name, String address) {
         this.name = name;
-        this.adress = adress;
+        this.address = address;
     }
 }
